@@ -23,8 +23,19 @@
 				<a href="" class="nav__item">Reviews</a>
 				<a href="" class="nav__item">Contact</a>
 			</nav>
+			<div class="nav__burgerbox">
+				<div class="nav__burger1"></div>
+				<div class="nav__burger2"></div>
+				<div class="nav__burger3"></div>
+			</div>
 		</div>
 	</div>
+	<!-- <div class="burger-container">
+		<div class="container nav__box">
+			<img src="img/logo.png" alt="" class="nav__icon">
+			
+		</div>
+	</div> -->
 
 	<div class="main">
 		<div class="main__box container">
@@ -110,7 +121,7 @@
 
 	<section class="sublist container">
 		<img src="img/sublist.png" alt="" class="sublist__img">
-		<div class="sublist__content">
+		<div class="sublist__content container">
 			<h3 class="sublist__title">Sub list section</h3>
 			<p class="sublist__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 				euismod bibendum laoreet. Proin gravida dolor sit amet lacus
@@ -131,7 +142,7 @@
 
 	<div class="picture">
 		<section class="sublist container">
-			<div class="sublist__content">
+			<div class="sublist__content container">
 				<h3 class="sublist__title">Standard Picture Section</h3>
 				<p class="sublist__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
 					euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
@@ -181,7 +192,7 @@
 						<h4 class="price-item__title">Basic</h4>
 					</div>
 					<div class="price-item__main">
-						<p class="price-item__number">$<span style="font-size: 94px;">0</span></p>
+						<p class="price-item__number">$<span>0</span></p>
 						<p class="price-item__subnumber">Free for Life</p>
 					</div>
 					<div class="price-item__elements">
@@ -198,7 +209,7 @@
 						<h4 class="price-item__title">Professional</h4>
 					</div>
 					<div class="price-item__main">
-						<p class="price-item__number">$<span style="font-size: 94px;">19</span></p>
+						<p class="price-item__number">$<span>19</span></p>
 						<p class="price-item__subnumber">Monthly Payment</p>
 						<div class="price-item__submain">OUR MOST POPULAR</div>
 					</div>
@@ -216,7 +227,7 @@
 						<h4 class="price-item__title">Enterprise</h4>
 					</div>
 					<div class="price-item__main">
-						<p class="price-item__number">$<span style="font-size: 94px;">70</span></p>
+						<p class="price-item__number">$<span>70</span></p>
 						<p class="price-item__subnumber">Monthly Payment</p>
 					</div>
 					<div class="price-item__elements">
@@ -301,8 +312,16 @@
 		<img src="img/socialmedia.png" alt="" class="footer__icon">
 		<p class="footer__copyright">© 2015 Axure Themes</p>
 	</div>
-
+	<script>
+		function changeBurgerbox(x) {
+			nav.classList.toggle("active")
+			burgerbox.classList.toggle("change");
+		}
+		const burgerbox = document.querySelector(".nav__burgerbox")
+		const nav = document.querySelector(".nav__items")
+		burgerbox.addEventListener("click", changeBurgerbox)</script>
 </body>
+
 <script src="js/script.js"></script>
 
 </html>
